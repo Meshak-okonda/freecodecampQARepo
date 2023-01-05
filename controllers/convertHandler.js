@@ -1,9 +1,9 @@
 module.exports = function (req, res, next) {
-  res.json(conver(req.query.input));
+  res.json(convert(req.query.input));
   next();
 };
 
-function conver(data) {
+function convert(data) {
   const number = parseFloat(data) || 0;
   if (data.indexOf("gal") > -1)
     return {
