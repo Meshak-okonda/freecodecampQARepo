@@ -68,6 +68,7 @@ function convert(data) {
 }
 
 const unitParse = (request) => {
+  console.log(request);
   if (request == "kg") return 6;
 
   if (request == "lbs") return 5;
