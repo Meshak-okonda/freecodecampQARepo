@@ -6,13 +6,12 @@ module.exports = function (req, res, next) {
 function convert(data) {
   var matches = data.match(/[+-]?\d+(\.\d+)?/g);
   let number = null;
-  if (matches) number = parseFloat(matches[0]);
-
-  const request = data.replace(matches[0], "").toLowerCase();
-
-  if (unitParse(request) == 0 && !number) return "invalid number and unit";
 
   if (!number) return "invalid number";
+  if (unitParse(request) == 0 && !number) return "invalid number and unit";
+
+  if (matches != null) number = parseFloat(matches[0]);
+  const request = data.replace(matches[0], "").toLowerCase();
   if (unitParse(request) == 0) return "invalid unit";
 
   if (unitParse(request) == 1)
