@@ -21,7 +21,7 @@ function convert(data) {
       initUnit: "gal",
       returnNum: number * 3.78541,
       returnUnit: "L",
-      string: `${number} gal to ${number * 3.78541} L`,
+      string: `${number} gal converts to ${number * 3.78541} L`,
     };
 
   if (unitParse(request) == 2)
@@ -30,7 +30,7 @@ function convert(data) {
       initUnit: "L",
       returnNum: number / 3.78541,
       returnUnit: "gal",
-      string: `${number} L to ${number / 3.78541} gal`,
+      string: `${number} L converts to ${number / 3.78541} gal`,
     };
   if (unitParse(request) == 3)
     return {
@@ -38,7 +38,7 @@ function convert(data) {
       initUnit: "mi",
       returnNum: number * 1.6,
       returnUnit: "km",
-      string: `${number} mi to ${number * 1.6} km`,
+      string: `${number} mi converts to ${number * 1.6} km`,
     };
   if (unitParse(request) == 4)
     return {
@@ -46,7 +46,7 @@ function convert(data) {
       initUnit: "km",
       returnNum: number / 1.6,
       returnUnit: "mi",
-      string: `${number} km to ${number / 1.6} mi`,
+      string: `${number} km converts to ${number / 1.6} mi`,
     };
   if (unitParse(request) == 5)
     return {
@@ -54,7 +54,7 @@ function convert(data) {
       initUnit: "lbs",
       returnNum: number / 2.205,
       returnUnit: "kg",
-      string: `${number} lbs to ${number / 2.205} kg`,
+      string: `${number} lbs converts to ${number / 2.205} kg`,
     };
 
   if (unitParse(request) == 6)
@@ -63,7 +63,7 @@ function convert(data) {
       initUnit: "kg",
       returnNum: number * 2.205,
       returnUnit: "lbs",
-      string: `${number} kg to ${number * 2.205} lbs`,
+      string: `${number} kg converts to ${number * 2.205} lbs`,
     };
 }
 
